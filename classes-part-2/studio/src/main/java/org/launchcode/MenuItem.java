@@ -13,6 +13,14 @@ public class MenuItem {
         this.isNew = iN;
     }
 
+    public double getPrice() { return price; }
+
+    public String getDescription() { return description; }
+
+    public String getCategory() { return category; }
+
+    public boolean isNew() { return isNew; }
+
     public void setPrice(double price) {
         this.price = price;
     }
@@ -21,12 +29,19 @@ public class MenuItem {
         this.description = description;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
+    public void setCategory(String category) { this.category = category; }
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    @Override
+    public String toString() {
+        String result = "Item: " + description + " Category: " + category + " Price: " + price;
+        if(isNew) {
+            result += " New Dish";
+        }
+        return result;
     }
 }
 
