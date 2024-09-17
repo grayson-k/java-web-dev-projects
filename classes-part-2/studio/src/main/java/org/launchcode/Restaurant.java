@@ -10,6 +10,7 @@ public class Restaurant {
         ArrayList<MenuItem> menuItems = new ArrayList<>();
         Menu menu = new Menu(new Date(), menuItems);
 
+
         MenuItem pasta = new MenuItem(5.99, "Noodles", "main course", true);
         MenuItem pizza = new MenuItem(7.99, "Pep Pizza", "main course", true);
         MenuItem mozzSticks = new MenuItem(4.99, "Cheesy sticks", "appetizer", false);
