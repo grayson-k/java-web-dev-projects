@@ -3,7 +3,7 @@ package org.launchcode;
 import java.util.ArrayList;
 
 public abstract class BaseDisc implements OpticalDisc{
-    private double storageCapacity;
+//    private double storageCapacity;
     private ArrayList<String> contentOfDisk;
 
     public BaseDisc(ArrayList<String> contentOfDisk, double storageCapacity) {
